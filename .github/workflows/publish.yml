@@ -1,15 +1,9 @@
 name: Publish to npm
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: "Package version to publish (e.g., 1.0.1)"
-        required: true
-        default: "1.0.1"
-
-  release:
-    types: [published]
+  push:
+    tags:
+      - "v*"
 
 jobs:
   publish:
