@@ -1,6 +1,6 @@
 {
   "name": "express-visual-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A visual logging middleware for Express.js that intercepts requests, logs them, and emits events for real-time UI updates via event streams.",
   "main": "./dist/index.js",
   "type": "module",
