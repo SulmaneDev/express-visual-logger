@@ -1,0 +1,44 @@
+{
+  "name": "express-visual-logger",
+  "version": "1.0.0",
+  "description": "A visual logging middleware for Express.js that intercepts requests, logs them, and emits events for real-time UI updates via event streams.",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch ./src/dev.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "logger",
+    "visual-logger",
+    "request-logger",
+    "event-stream",
+    "real-time-logging",
+    "server-sent-events"
+  ],
+  "author": {
+    "email": "whomaderules@gmail.com",
+    "name": "Muhammad Sulman"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.9.2",
+    "@types/supertest": "^6.0.3",
+    "cross-env": "^10.1.0",
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

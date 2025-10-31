@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express Visual Logger</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+  </head>
+  <body>
+    <header class="d-flex align-items-center justify-content-between px-3">
+      <h1>Express Visual Logger</h1>
+      <div>
+        <button id="clear-btn" class="btn btn-secondary">Clear</button>
+        <a target="_blank" href="https://www.github.com/SulmaneDev"
+          >Muhammad Sulman</a
+        >
+      </div>
+    </header>
+    <table
+      class="table table-striped table-hover table-bordered table-responsive"
+    >
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Timestamp</th>
+          <th scope="col">Method</th>
+          <th scope="col">URL</th>
+          <th scope="col">Body / Query</th>
+          <th scope="col">Duration</th>
+        </tr>
+      </thead>
+      <tbody id="log-body">
+        
+      </tbody>
+    </table>
+  </body>
+  <script src="./date-wrapper.js"></script>
+  <script src="./jquery.min.js"></script>
+  <script src="./bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+</html>
